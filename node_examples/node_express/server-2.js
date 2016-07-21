@@ -9,3 +9,7 @@ var app = express();
 app.use(morgan('dev')); //dev is a prefomatted format in the morgan implementation
 
 app.use(express.static(__dirname + '/public')); // the public folder is available to the user side for use
+
+app.listen(port,hostname,function(){
+  console.log(`server runnning at httpL//${hostname}:${port}/`);
+});

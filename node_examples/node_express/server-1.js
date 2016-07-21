@@ -16,5 +16,5 @@ app.use(function(req,res,next){
 var server = http.createServer(app);
 
 server.listen(port, hostname, function(){
-  console.log(`server runnning at httpL//${hostname}`)
+  console.log(`server runnning at httpL//${hostname}:${port}/`)
 })
